@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.nb.pelisapp.R;
-import com.nb.pelisapp.db.entity.MovieEntity;
+import com.nb.pelisapp.data.local.db.entity.MovieEntity;
 
 import java.util.List;
 

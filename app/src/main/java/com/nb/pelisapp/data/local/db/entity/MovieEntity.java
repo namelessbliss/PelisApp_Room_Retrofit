@@ -1,4 +1,4 @@
-package com.nb.pelisapp.db.entity;
+package com.nb.pelisapp.data.local.db.entity;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
