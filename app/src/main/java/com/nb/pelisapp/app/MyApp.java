@@ -1,4 +1,4 @@
-package com.nb.pelisapp;
+package com.nb.pelisapp.app;
 
 import android.app.Application;
 import android.content.Context;

@@ -1,10 +1,18 @@
-package com.nb.pelisapp;
+package com.nb.pelisapp.db.entity;
+
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+@Entity(tableName = "movies")
 public class MovieEntity {
 
+    @PrimaryKey
+    @SerializedName("id")
+    @Expose
+    private int id;
     @SerializedName("popularity")
     @Expose
     private double popularity;
@@ -17,9 +25,6 @@ public class MovieEntity {
     @SerializedName("poster_path")
     @Expose
     private String posterPath;
-    @SerializedName("id")
-    @Expose
-    private int id;
     @SerializedName("adult")
     @Expose
     private boolean adult;
