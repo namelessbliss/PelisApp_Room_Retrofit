@@ -1,5 +1,7 @@
 package com.nb.pelisapp.data.remote;
 
+import android.util.Log;
+
 import java.io.IOException;
 
 import okhttp3.HttpUrl;
@@ -32,6 +34,7 @@ public class RequestInterceptor implements Interceptor {
                 .build();
 
         //Retorna el nuevo request formado
+        Log.w("API",request.url().toString());
         return chain.proceed(request);
     }
 }

@@ -1,6 +1,7 @@
 package com.nb.pelisapp.data.local.db.dao;
 
 import androidx.lifecycle.LiveData;
+import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
@@ -12,6 +13,7 @@ import java.util.List;
 /**
  * Define los metodos de consultas a la base de datos
  */
+@Dao
 public interface MovieDAO {
 
     @Query("SELECT * FROM movies")
